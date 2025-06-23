@@ -4,10 +4,11 @@
 This project implements a serverless, cloud-native pipeline to analyze stock sentiment and visualize it using a Streamlit dashboard deployed via AWS ECS Fargate. The data is collected daily from a stock API, analyzed for sentiment, and stored in Amazon RDS and S3. A Streamlit dashboard allows users to visualize and explore the sentiment trends.
 
 EventBridge (Daily Trigger)     
+       
        ⬇️
        
 AWS Lambda:
-  - Fetch stock data from API 
+  - Fetch stock data from API (AMZ stock)
   - Analyze sentiment
   - Store in PostgreSQL (Amazon RDS)
   - Save stock data as JSON in S3
@@ -28,10 +29,14 @@ Deployed on:
 
 
 
+
+
 📁 Architecure Diagram
 
 ![stocksentimentanalysis](stockarch.jpeg)
  
+
+
 
 🛠️ Technologies Used
 
